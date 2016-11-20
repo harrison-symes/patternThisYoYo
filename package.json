@@ -1,0 +1,35 @@
+{
+  "name": "patternThisYoYo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo . -d --serve bundle.js --live",
+    "test": "browserify tests/test.js | node | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrison-symes/patternThisYoYo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrison-symes/patternThisYoYo/issues"
+  },
+  "homepage": "https://github.com/harrison-symes/patternThisYoYo#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "budo": "^9.2.2",
+    "clone": "^2.0.0",
+    "deep-freeze": "0.0.1",
+    "morphdom": "^2.2.0",
+    "redux": "^3.6.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.2",
+    "watchify": "^3.7.0",
+    "yo-yo": "^1.3.1"
+  }
+}
