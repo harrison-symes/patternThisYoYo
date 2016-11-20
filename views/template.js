@@ -8,12 +8,18 @@ function template(state, dispatch) {
   return html
     `
     <div class="display">
-    ${displayBoard(state, dispatch)}
+    ${displayChars(state)}
+    ${displayBoard(state)}
     ${createForms(state, dispatch)}
     </div>
     `
 }
 
+function displayChars (state) {
+  return html`
+    <h2>Characters: ${state.charArray.join(', ')}</h2>
+  `
+}
 
 function displayBoard(state, dispatch) {
   return html
